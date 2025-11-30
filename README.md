@@ -17,6 +17,7 @@ Parkiss is a Java console-based parking system that manages cars, motorcycles, a
 ✦ 𝐹𝑒𝒶𝓉𝓊𝓇𝑒𝓈 ✦
 
 🚗 Vehicle Management – Track cars, motorcycles, and trucks entering or exiting the parking lot.
+
 ⏱️ Fee Calculation – Calculates parking fees based on time parked.
 🧾 Receipts – Generates entry and exit receipts for each vehicle.
 📊 Simulated Hours – Allows testing with custom parked durations.
