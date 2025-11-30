@@ -70,23 +70,41 @@ java Main
 ☘ 𝐸𝓍𝒶𝓂𝓅𝓁𝑒 𝒪𝓊𝓉𝓅𝓊𝓉
 
 ===== PARKING SYSTEM MENU =====
+
 1. Enter Vehicle
+
 2. Exit Vehicle
+
 3. Exit Program
+
 Choose: 1
+
 Enter plate number: ABC123
+
 Select Vehicle Type:
+
 1. Motorcycle
+
 2. Car
+
 3. Truck
+
 Choice: 2
+
 --- ENTRY RECEIPT ---
+
 Plate: ABC123
+
 Time In: 14:30
+
 Vehicle Type: CAR
+
 Fee: P30.00
+
 Reminder: Exceeding 3 hours will incur an additional base fee.
+
 ---------------------
+
 
 
 ───────────────────────────────────────────────────────────────────────────────
