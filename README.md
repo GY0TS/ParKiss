@@ -11,6 +11,7 @@ Parkiss is a console-based parking management system. Users can register vehicle
 ✦ 𝐴𝑝𝓅𝓁𝒾𝑒𝒹 𝒪𝒪𝒫 𝐶𝑜𝓃𝒸𝑒𝓅𝓉𝓈
 
 🔷 Abstraction
+
 Hides complex fee calculations and parking logic inside classes. Users interact only with simple methods like enter and exit.
 
 🔶 Encapsulation
@@ -24,9 +25,11 @@ Each class manages its own data:
   ParkingLot manages parked vehicles, records, and types
 
 🔷 Polymorphism
+
 Different vehicle types override getBaseRate() to provide specific fees.
 
 🔶 Inheritance
+
 Car, Motorcycle, and Truck inherit from Vehicle.
 
 ─────────────────────────────────────────────────────────────────────────────
