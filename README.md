@@ -36,19 +36,19 @@ Parkiss/
 
 │
 
-├─ Main.java # Main menu and user interaction
+├─ Main.java 
 
-├─ Vehicle.java # Abstract base class for vehicles
+├─ Vehicle.java
 
-├─ Car.java # Car class extending Vehicle
+├─ Car.java 
 
-├─ Motorcycle.java # Motorcycle class extending Vehicle
+├─ Motorcycle.java 
 
-├─ Truck.java # Truck class extending Vehicle
+├─ Truck.java 
 
-├─ ParkingLot.java # Manages all vehicles, types, and parking logic
+├─ ParkingLot.java 
 
-└─ ParkingRecord.java # Stores entry and exit times for vehicles
+└─ ParkingRecord.java 
 
 
 ─────────────────────────────────────────────────────────────────────────────
@@ -92,11 +92,17 @@ Select Vehicle Type:
 Choice: 2
 
 --- ENTRY RECEIPT ---
+
 Plate: ABC123
+
 Time In: 14:30
+
 Vehicle Type: CAR
+
 Fee: P30.00
+
 Reminder: Exceeding 3 hours will incur an additional base fee.
+
 ---------------------
 
 ===== PARKING SYSTEM MENU =====
@@ -110,12 +116,19 @@ Vehicles currently inside:
 Select vehicle number to exit: 1
 
 --- FULL EXIT RECEIPT ---
+
 Plate: ABC123
+
 Time In: 14:30
+
 Time Out: 17:45
+
 Total Parked: 3h 15m
+
 Total Fee: P60.00
+
 Additional Fee for extra hour(s): P30.00
+
 -------------------------
 
 
