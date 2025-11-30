@@ -14,13 +14,14 @@ Parkiss is a console-based parking management system. Users can register vehicle
 Hides complex fee calculations and parking logic inside classes. Users interact only with simple methods like enter and exit.
 
 🔶 Encapsulation
+
 Each class manages its own data:
 
-Vehicle stores license plate and base rate
+  Vehicle stores license plate and base rate
 
-ParkingRecord tracks entry/exit times
+  ParkingRecord tracks entry/exit times
 
-ParkingLot manages parked vehicles, records, and types
+  ParkingLot manages parked vehicles, records, and types
 
 🔷 Polymorphism
 Different vehicle types override getBaseRate() to provide specific fees.
