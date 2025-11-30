@@ -1,61 +1,52 @@
-🌟 Parkiss: Parking Management System 🌟
+🌟 Parkiss 🌟
 
-───────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────────────────
 
-𝐼𝒯–𝟐𝟏𝟎𝟖
+𝐷𝐸𝒮𝐶𝑅𝐼𝒫𝒯𝐼𝒪𝒩 / 𝒪𝒱𝐸𝑅𝒱𝐼𝐸𝒲
 
-Magtibay,  Mico John  R.
-Pahati, Angela Ryn C.
-Mercado, Kherle 
+Parkiss is a console-based parking management system. Users can register vehicles, simulate parking duration, and calculate parking fees. It provides a simple, interactive interface to manage cars, motorcycles, and trucks efficiently.
 
-───────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────────────────
 
-Parkiss is a Java console-based parking system that manages cars, motorcycles, and trucks. Users can enter and exit vehicles, calculate fees based on parked hours, generate receipts, and simulate parked durations. The program provides a simple interface for easy interaction and testing.
+✦ 𝒪𝒪𝒫 𝐶𝒪𝒩𝐶𝐸𝒫𝒯𝒮 𝒜𝒫𝒫𝐿𝐼𝐸𝒟 ✦
 
-───────────────────────────────────────────────────────────────────────────────
+🔷 Abstraction  
+Vehicle is an abstract class defining common behavior for all vehicle types. Specific vehicle types (Car, Motorcycle, Truck) implement their own base rates.
 
-✦ 𝐹𝑒𝒶𝓉𝓊𝓇𝑒𝓈 ✦
+🔶 Encapsulation  
+Private fields and public getters/setters ensure controlled access to vehicle and parking data, maintaining data integrity.
 
-🚗 Vehicle Management – Track cars, motorcycles, and trucks entering or exiting the parking lot.
+🔷 Inheritance  
+Car, Motorcycle, and Truck extend the Vehicle superclass, reusing common behavior and attributes.
 
-⏱️ Fee Calculation – Calculates parking fees based on time parked.
+🔶 Polymorphism  
+Vehicle references are used to store different vehicle types, and the overridden `getBaseRate()` method provides dynamic fee calculation.
 
-🧾 Receipts – Generates entry and exit receipts for each vehicle.
+🔷 Exception Handling  
+The program handles invalid user input using try-catch blocks to avoid runtime errors and guide users for correct input.
 
-📊 Simulated Hours – Allows testing with custom parked durations.
+─────────────────────────────────────────────────────────────────────────────────────────
 
-💻 Console Interface – Interact using a simple text-based menu.
-
-───────────────────────────────────────────────────────────────────────────────
-
-➺ 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 𝒮𝓉𝓇𝓊𝒸𝓉𝓊𝓇𝑒
+✧ 𝒫𝑅𝒪𝐺𝑅𝐴𝑀 𝒮𝒯𝑅𝒰𝐶𝒯𝒰𝑅𝐸 ✧
 
 Parkiss/
-
 │
+├─ Main.java           # Handles user interface, menu, and interactions
+├─ ParkingLot.java     # Manages parked vehicles, records, and fee calculations
+├─ ParkingRecord.java  # Tracks entry and exit times of vehicles
+├─ Vehicle.java        # Abstract superclass defining common vehicle behavior
+├─ Car.java            # Car-specific implementation
+├─ Motorcycle.java     # Motorcycle-specific implementation
+└─ Truck.java          # Truck-specific implementation
 
-├─ Car.java
+─────────────────────────────────────────────────────────────────────────────────────────
 
-├─ Motorcycle.java
+✧ 𝐻𝒪𝒲 𝒯𝒪 𝑅𝒰𝒩 ✧
 
-├─ Truck.java
+1. Ensure Java 8+ is installed.  
+2. Open terminal/command line and navigate to the project directory.  
+3. Compile all files:
 
-├─ Vehicle.java
-
-├─ ParkingLot.java
-
-├─ ParkingRecord.java
-
-└─ Main.java
-
-
-───────────────────────────────────────────────────────────────────────────────
-
-✧ 𝐻𝑜𝓌 𝓉𝑜 𝑅𝓊𝓃
-
-Ensure Java 8+ is installed.
-
-Compile all files:
 
 javac *.java
 
