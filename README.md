@@ -33,14 +33,23 @@ Car, Motorcycle, and Truck inherit from Vehicle.
 ✧ 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞
 
 Parkiss/
+
 │
-├─ Main.java # Main menu and user interaction 
+
+├─ Main.java # Main menu and user interaction
+
 ├─ Vehicle.java # Abstract base class for vehicles
+
 ├─ Car.java # Car class extending Vehicle
+
 ├─ Motorcycle.java # Motorcycle class extending Vehicle
+
 ├─ Truck.java # Truck class extending Vehicle
+
 ├─ ParkingLot.java # Manages all vehicles, types, and parking logic
+
 └─ ParkingRecord.java # Stores entry and exit times for vehicles
+
 
 ─────────────────────────────────────────────────────────────────────────────
 
