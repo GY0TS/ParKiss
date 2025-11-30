@@ -8,45 +8,52 @@ Parkiss is a console-based parking management system. Users can register vehicle
 
 ─────────────────────────────────────────────────────────────────────────────────────────
 
-✦ 𝒪𝒪𝒫 𝐶𝒪𝒩𝐶𝐸𝒫𝒯𝒮 𝒜𝒫𝒫𝐿𝐼𝐸𝒟 ✦
+✦ 𝐴𝑝𝓅𝓁𝒾𝑒𝒹 𝒪𝒪𝒫 𝐶𝑜𝓃𝒸𝑒𝓅𝓉𝓈
 
-🔷 Abstraction  
-Vehicle is an abstract class defining common behavior for all vehicle types. Specific vehicle types (Car, Motorcycle, Truck) implement their own base rates.
+🔷 Abstraction
+Hides complex fee calculations and parking logic inside classes. Users interact only with simple methods like enter and exit.
 
-🔶 Encapsulation  
-Private fields and public getters/setters ensure controlled access to vehicle and parking data, maintaining data integrity.
+🔶 Encapsulation
+Each class manages its own data:
 
-🔷 Inheritance  
-Car, Motorcycle, and Truck extend the Vehicle superclass, reusing common behavior and attributes.
+Vehicle stores license plate and base rate
 
-🔶 Polymorphism  
-Vehicle references are used to store different vehicle types, and the overridden `getBaseRate()` method provides dynamic fee calculation.
+ParkingRecord tracks entry/exit times
 
-🔷 Exception Handling  
-The program handles invalid user input using try-catch blocks to avoid runtime errors and guide users for correct input.
+ParkingLot manages parked vehicles, records, and types
 
-─────────────────────────────────────────────────────────────────────────────────────────
+🔷 Polymorphism
+Different vehicle types override getBaseRate() to provide specific fees.
 
-✧ 𝒫𝑅𝒪𝐺𝑅𝐴𝑀 𝒮𝒯𝑅𝒰𝐶𝒯𝒰𝑅𝐸 ✧
+🔶 Inheritance
+Car, Motorcycle, and Truck inherit from Vehicle.
+
+─────────────────────────────────────────────────────────────────────────────
+
+✧ 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞
 
 Parkiss/
 │
-├─ Main.java           # Handles user interface, menu, and interactions
-├─ ParkingLot.java     # Manages parked vehicles, records, and fee calculations
-├─ ParkingRecord.java  # Tracks entry and exit times of vehicles
-├─ Vehicle.java        # Abstract superclass defining common vehicle behavior
-├─ Car.java            # Car-specific implementation
-├─ Motorcycle.java     # Motorcycle-specific implementation
-└─ Truck.java          # Truck-specific implementation
+├─ Main.java # Main menu and user interaction
+├─ Vehicle.java # Abstract base class for vehicles
+├─ Car.java # Car class extending Vehicle
+├─ Motorcycle.java # Motorcycle class extending Vehicle
+├─ Truck.java # Truck class extending Vehicle
+├─ ParkingLot.java # Manages all vehicles, types, and parking logic
+└─ ParkingRecord.java # Stores entry and exit times for vehicles
 
-─────────────────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────
 
-✧ 𝐻𝒪𝒲 𝒯𝒪 𝑅𝒰𝒩 ✧
+✧ 𝐇𝐨𝐰 𝐭𝐨 𝐑𝐮𝐧
 
-1. Ensure Java 8+ is installed.  
-2. Open terminal/command line and navigate to the project directory.  
-3. Compile all files:
+Install Java JDK 8 or higher.
 
+Open terminal/command prompt and navigate to the Parkiss folder.
+
+cd path/to/Parkiss
+
+
+Compile all Java files:
 
 javac *.java
 
@@ -56,55 +63,77 @@ Run the program:
 java Main
 
 
-───────────────────────────────────────────────────────────────────────────────
+Follow on-screen menu to enter or exit vehicles.
 
-☘ 𝐸𝓍𝒶𝓂𝓅𝓁𝑒 𝒪𝓊𝓉𝓅𝓊𝓉
+─────────────────────────────────────────────────────────────────────────────
+
+✧ 𝐒𝐚𝐦𝐩𝐥𝐞 𝐎𝐮𝐭𝐩𝐮𝐭
 
 ===== PARKING SYSTEM MENU =====
-
 1. Enter Vehicle
-
 2. Exit Vehicle
-
 3. Exit Program
-
 Choose: 1
 
 Enter plate number: ABC123
-
 Select Vehicle Type:
-
 1. Motorcycle
-
 2. Car
-
 3. Truck
-
 Choice: 2
 
 --- ENTRY RECEIPT ---
-
 Plate: ABC123
-
 Time In: 14:30
-
 Vehicle Type: CAR
-
 Fee: P30.00
-
 Reminder: Exceeding 3 hours will incur an additional base fee.
-
 ---------------------
 
+===== PARKING SYSTEM MENU =====
+1. Enter Vehicle
+2. Exit Vehicle
+3. Exit Program
+Choose: 2
+
+Vehicles currently inside:
+1. ABC123 (CAR)
+Select vehicle number to exit: 1
+
+--- FULL EXIT RECEIPT ---
+Plate: ABC123
+Time In: 14:30
+Time Out: 17:45
+Total Parked: 3h 15m
+Total Fee: P60.00
+Additional Fee for extra hour(s): P30.00
+-------------------------
 
 
-───────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────
 
-☘ 𝐴𝒸𝓀𝓃𝑜𝓌𝓁𝑒𝓂𝑒𝓃𝓉𝓈
+✦ 𝐀𝐮𝐭𝐡𝐨𝐫 𝐚𝐧𝐝 𝐀𝐜𝐤𝐧𝐨𝐰𝐥𝐞𝐝𝐠𝐞𝐦𝐞𝐧𝐭
 
-Special thanks to our instructor and peers who guided us in developing this project.
+Developed by [Your Name].
+Acknowledgements: Instructor and classmates for guidance and support.
 
-───────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────
+
+✧ 𝐅𝐮𝐭𝐮𝐫𝐞 𝐄𝐧𝐡𝐚𝐧𝐜𝐞𝐦𝐞𝐧𝐭𝐬
+
+GUI interface for better visualization
+
+Database integration for persistent records
+
+Support for multiple parking lots and pricing tiers
+
+─────────────────────────────────────────────────────────────────────────────
+
+✧ 𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐬
+
+Java SE Documentation
+
+Online tutorials for console-based Java programs
 
 ❂ 𝐷𝒾𝓈𝒸𝓁𝒶𝒾𝓂𝑒𝓇
 
