@@ -86,6 +86,7 @@ Follow on-screen menu to enter or exit vehicles.
 1. Enter Vehicle
 2. Exit Vehicle
 3. Exit Program
+   
 Choose: 1
 
 Enter plate number: ABC123
@@ -93,6 +94,7 @@ Select Vehicle Type:
 1. Motorcycle
 2. Car
 3. Truck
+   
 Choice: 2
 
 --- ENTRY RECEIPT ---
@@ -113,6 +115,7 @@ Reminder: Exceeding 3 hours will incur an additional base fee.
 1. Enter Vehicle
 2. Exit Vehicle
 3. Exit Program
+   
 Choose: 2
 
 Vehicles currently inside:
