@@ -34,7 +34,7 @@ Car, Motorcycle, and Truck inherit from Vehicle.
 
 Parkiss/
 │
-├─ Main.java # Main menu and user interaction
+├─ Main.java # Main menu and user interaction 
 ├─ Vehicle.java # Abstract base class for vehicles
 ├─ Car.java # Car class extending Vehicle
 ├─ Motorcycle.java # Motorcycle class extending Vehicle
